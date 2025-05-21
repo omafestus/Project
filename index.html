@@ -3,43 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/028479eff9.js" crossorigin="anonymous"></script>
-    <title>My website</title>
+    <link rel="stylesheet" href="services.css">
+    <title>My Hub Project</title>
 </head>
 <body>
-    <!-- <div class="header">
-        <div class="navbar">
-        <div class="logo"><img src="orange.PNG" alt=""></a></div>
 
-        <div class="halo">
-        <input type="text" placeholder="search" id="halo"/>
+<section class="portfolio">
+    <div class="section-head">
+        <h1>My Hub Project</h1>
     </div>
+    <div class="mainContainer">
+        <!-- button starts here -->
+            <button class="button" data-filter="*">About</button>
+            <input type="text" placeholder="Search..." id="halo"/>
+            <label for="all"></label>
+            <select name="all" id="all">
+            <option value="show">Home Page</option>
+            <option value="full.html">Full Time</option>
+            <option value="part.html">Part Time</option>
+        </select>
+        </div>
+        <!-- button ends here -->
+
+        <!-- gallery section starts here  -->
+    <div class="gallery">
+            <!-- card 1 starts here -->
+            <div class="item-design">
+                <img src="./img/1.png">
+                <div class="overlay">
+                    <a href="#">Tired of looking for a Job?</a>
+                </div>
+            </div>
+            <!-- card 1 ends here -->
     
-    <div class="bar">
-        <label for="all" option value="show" id="show">
-        </label>
-        <select name="all" id="all">
-        <option value="show" id="show">Show More</option>
-        <option value="full" id="full">Full Time</option>
-        <option value="part" id="part">Part Time</option>
-    </select>
-    </div> 
+        <!-- card 2 starts here -->
+        <div class="item-design">
+            <img src="./img/2.png">
+            <div class="overlay">
+                <a href="#">Exhausted all options?</a>
+            </div>
+        </div>
+        <!-- card 2 ends here -->
+    
+    <!-- card 2 starts here -->
+    <div class="item-design">
+        <img src="./img/3.png">
+        <div class="overlay">
+            <a href="#">Been to different interviews?</a>
+        </div>
+    </div>
+    <!-- card 2 ends here -->
+<!-- card 3 starts here -->
+<div class="item-design">
+    <img src="./img/4.png">
+    <div class="overlay">
+        <a href="#">Explored different Job options?</a>
+    </div>
 </div>
-</div> -->
-<div class="container">
-<div class="gallery">
-    <img src="lemon.jpg" alt="">
-    <img src="choco.jpg" alt="">
-    <img src="ice.jpg" alt="">
-    <img src="straw.jpg" alt="">
-    <img src="caramel.jpg" alt="">
-    <img src="carrot.jpg" alt="">
-    <img src="orange.jpg" alt="">
-    <img src="fruit.jpg" alt="">
-    <img src="banana.jpg" alt="">
+<!-- card 3 ends here -->
+<!-- card 4 starts here -->
+<div class="item-design">
+    <img src="./img/5.png">
+    <div class="overlay">
+        <a href="#">Getting Frustrated?</a>
+    </div>
+</div>
+<!-- card 4 ends here -->
+<!-- card 5 starts here -->
+<div class="item-design">
+    <img src="./img/6.png">
+    <div class="overlay">
+        <a href="#">Reading newsletters to explore</a>
+    </div>
+</div>
+<!-- card 5 ends here -->
+<!-- card 6 starts here -->
+<div class="item-design">
+    <img src="./img/7.png">
+    <div class="overlay">
+        <a href="#">Well, you finally found the right one!</a>
+    </div>
+</div>
+<!-- card 6 ends here -->
+<!-- card 7 starts here -->
+<div class="item-design">
+    <img src="./img/8.png">
+    <div class="overlay">
+        <a href="#">A place where team work is valued</a>
+    </div>
+</div>
+<!-- card 7 ends here -->
+<!-- card 8 starts here -->
+<div class="item-design">
+    <img src="./img/9.png">
+    <div class="overlay">
+        <a href="#">Targets are given</a>
+    </div>
+</div>
+<!-- card 8 ends here -->
+<!-- card 9 starts here -->
+<div class="item-design">
+    <img src="./img/10.png">
+    <div class="overlay">
+        <a href="#">Time lines are set</a>
+    </div>
+</div>
+<!-- card 9 ends here -->
+<!-- card 10 starts here -->
+<div class="item-design">
+    <img src="./img/11.png">
+    <div class="overlay">
+        <a href="#">Achievements are rewarded</a>
+    </div>
+</div>
+<!-- card 10 ends here -->
+<!-- card 11 starts here -->
+<br>
+<br>
+<br>
+<div class="register">
+    <a href="./img/index.html"><button type="submit" id="sub" target="_blank">Register</button></a>
 </div>
 </div>
-    <script src="script.js"></script>
+</section>
+
+<script>
+    document.getElementById("all").addEventListener("change", function () {
+    const page = this.value;
+    if (page) {
+      window.location.href = page;
+    }
+  });
+</script>
 </body>
 </html>
