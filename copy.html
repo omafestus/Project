@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="form signup">
+            <header>Signup</header>
+            <form action="#">
+                <input type="text" placeholder="Full name" required/>
+                <input type="text" placeholder="Email Address" required/>
+                <input type="password" placeholder="Password" required/>
+                <input type="password" placeholder="Confirm password" required/>
+               <div class="checkbox">
+                <input type="checkbox" id="signupCheck"/>
+                <label for="signupCheck">I want to be a customer</label>
+               </div> 
+               <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+               <br>
+               <a href="#">Already a customer? Login</a>
+               <div class="popup" id="popup">
+                <img src="tik.jpg" alt="">
+                <h2>Congratulations!</h2>
+                <br>
+                <p>You are now a customer. 
+                You may now proceed to login to your dashboard</p>
+                <br>
+                <a href="about.html"><button type="button" onclick="closePopup()" target="_blank">Ok</button></a>
+                    
+           </div>
+            </form>
+        </div>
+
+        
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+    <!-- <div class="container">
+        <div class="title">Login & Signup</div> -->
+        <!-- <form action="#">
+            <div class="user-datails">
+
+                <div class="input-box">
+                    <span class="details">Fullname</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <br><div class="input-box">
+                    <span class="details">Phone</span>
+                    <input type="number" placeholder="Enter your phone no." required>
+                </div>
+
+                <br><div class="input-box">
+                    <span class="details">Email Address</span>
+                    <input type="text" placeholder="Enter your Email Address" required>
+                </div>
+
+                <br><div class="input-box">
+                    <span class="details">Alergy</span>
+                    <input type="text" placeholder="Do you have any food alergy?" required>
+                </div>
+                <br><div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter your password" required>
+                </div>
+                <br><div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="text" placeholder="Confirm your password" required>
+                </div>
+            </div>
+
+            <br><div class="button">
+                <input name="name=" value="Register">
+            </div>
+        </form>
+    </div> -->
+

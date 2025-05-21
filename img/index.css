@@ -1,0 +1,116 @@
+body{
+    padding: 0;
+    background: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(backg.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+form input{display: block;
+    height: 40px;
+    width: 40%;
+    padding: 0 100px;
+    font-size: 15px;
+    border-radius: 8px;
+    background: #fff;
+}
+.checkbox input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    accent-color: #fff;
+    cursor: pointer;
+}
+form .checkboxlabel{
+    cursor: pointer;
+    color: #fff;
+    
+}
+.halo{
+    padding: 20px 30px 120px;
+    row-gap: 40px;
+    width: 500px;
+    height: 600px;
+}
+.you{
+    font-size: 2rem;
+    padding: 0.5rem 12rem;
+    font-weight: bold;
+    color: #fff;
+
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+#sub{
+    width: 15vw;
+    height: 5vh;
+    font-size: 20px;
+    background-color: #eb9b76;
+    color: white;
+    margin: 0px 70px;
+}
+
+#sub:hover{
+    scale: 1.05;
+    
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        padding: 0 10px;
+    }
+
+    .checkbox {
+        max-width: 90vw;
+    }
+
+    .you {
+        width: 90%;
+    }
+
+    #halo, #sub {
+        width: 50vw;
+        font-size: 16px;
+    }
+
+    
+}
+/* #full{
+    color: #fff;
+    padding: 0 2rem;
+
+    } */
+
+/* .contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+img{
+    background: transparent;
+    width: 200%;
+}
+#ok{
+    justify-content: center;
+    align-items: center;
+    border: 10;
+
+}
+#name{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+button{
+    padding: ;
+} */

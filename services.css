@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: url(download2.jpg);
+}
+.portfolio{
+    padding: 40px 8px;
+    background-color: var(--body-cir);
+    text-align: center;
+
+}
+.section-head{
+    max-width: 700px;
+    margin: 0px auto 15px;
+    text-align: center;
+    color: #5422b1;
+}
+.section-head h1{
+    position: relative;
+    font-size: 32px;
+    margin: 0
+    
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 2em;
+}
+
+#halo{
+    font-size: 20px;
+    border-radius: 50px;
+    color: #5422b1;
+    width: 50vw;
+}
+#halo:hover{
+    scale: 1.05;
+    color: #aa2929;
+}
+#all{
+    font-size: 20px;
+    cursor: pointer;
+    color: #5422b1;
+    padding: 1 2em;
+    gap: 2em;
+}
+
+#all:hover{
+    scale: 1.05;
+    color: #aa2929;
+
+}
+.button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    color: #5422b1;
+    font-size: 20px;
+}
+.button:hover{
+    scale: 1.05;
+    color: #aa2929;
+}
+.gallery{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 60vh;  
+}
+.gallery img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.item-design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 20px auto;
+    padding: 20px;
+    padding-top: 2em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+.item-design:hover{
+    scale: 1.05;
+    color: #aa2929;
+}
+input[type="text"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+    padding: 0 5em;
+  }
+.overlay a{
+    font-size: 1.2em;
+    color: #5422b1;
+}
+.overlay a:hover{
+    color: #aa2929;
+   
+}
+
+#sub{
+    width: 30vw;
+    height: 5vh;
+    font-size: 20px;
+    background-color: #5422b1;
+    color: white;
+}
+
+#sub:hover{
+    scale: 1.05;
+    
+}
+@media (max-width: 768px) {
+    .gallery {
+        padding: 0 10px;
+    }
+
+    .gallery img {
+        max-width: 90vw;
+    }
+
+    .item-design {
+        width: 90%;
+    }
+
+    #halo, #sub {
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    .button, #all {
+        font-size: 16px;
+    }
+}

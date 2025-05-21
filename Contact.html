@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="form signup">
+            <header>Signup</header>
+            <form action="#">
+                <input type="text" placeholder="Full name" required/>
+                <input type="text" placeholder="Email Address" required/>
+                <input type="password" placeholder="Password" required/>
+                <input type="password" placeholder="Confirm password" required/>
+               <div class="checkbox">
+                <input type="checkbox" id="signupCheck"/>
+                <label for="signupCheck">I want to be a customer</label>
+               </div> 
+               <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+               <br>
+               <a href="#">Already a customer? Login</a>
+               <div class="popup" id="popup">
+                <img src="tik.jpg" alt="">
+                <h2>Congratulations!</h2>
+                <br>
+                <p>You are now a customer. 
+                You may now proceed to login to your dashboard</p>
+                <br>
+                <a href="about.html"><button type="button" onclick="closePopup()" target="_blank">Ok</button></a>
+                    
+           </div>
+            </form>
+        </div>
+
+        
+
+    </section>
+    <script src="script2.js"></script>
+</body>
+</html>
