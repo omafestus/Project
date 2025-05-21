@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
 </head>
 <body>
 <style>
@@ -31,28 +31,42 @@
     background-color: transparent;
     padding: 1rem;
     width: 80%;
-    max-width: 400px;
+    max-width: 270px;
     height: auto;
     border-radius: 50px;
 }
     h1{
         color: rgb(42, 130, 165);
-        font-size: 3em;
+        font-size: 2.5em;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     p{
-        font-size: 1em;
-        font-style: italic;
+        font-size: 0.7em;
+        font-style: bold;
         
     }
 
-    @media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
+    @media (max-width: 768px) {
+        .gallery {
+        padding: 0 10px;
     }
 
-    .can {
-        padding: 1rem;
+    .gallery img {
+        max-width: 90vw;
+    }
+
+    .item-design {
+        width: 90%;
+        max-width: unset; /* Allow it to take up to 90% on mobile without a hard max-width */
+    }
+
+    #halo, #sub {
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    .button, #all {
+        font-size: 16px;
     }
 }
 </style>

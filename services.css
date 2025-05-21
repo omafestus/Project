@@ -6,12 +6,15 @@
 }
 body{
     background-image: url(download2.jpg);
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling, optional */
 }
 .portfolio{
     padding: 40px 8px;
-    background-color: var(--body-cir);
+    background-color: var(--body-cir); /* Assuming --body-cir is defined elsewhere or meant to be a direct color */
     text-align: center;
-
 }
 .section-head{
     max-width: 700px;
@@ -22,8 +25,7 @@ body{
 .section-head h1{
     position: relative;
     font-size: 32px;
-    margin: 0
-    
+    margin: 0;
 }
 .mainContainer{
     display: flex;
@@ -31,6 +33,7 @@ body{
     align-items: center;
     padding: 0;
     gap: 2em;
+    /* flex-wrap: wrap; /* Uncomment if you want items to wrap onto new lines on smaller screens */
 }
 
 #halo{
@@ -47,17 +50,16 @@ body{
     font-size: 20px;
     cursor: pointer;
     color: #5422b1;
-    padding: 1 2em;
-    gap: 2em;
+    padding: 1em 2em; /* Adjusted padding unit for clarity */
+    /* gap: 2em; /* Gap on #all is redundant if it's within a flex container with gap */
 }
 
 #all:hover{
     scale: 1.05;
     color: #aa2929;
-
 }
 .button{
-    width: 70px;
+    width: 70px; /* Fixed width might be tricky on very small screens, consider percentages if needed */
     height: 30px;
     cursor: pointer;
     color: #5422b1;
@@ -69,10 +71,10 @@ body{
 }
 .gallery{
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-height: 60vh;  
+    min-height: 60vh;
 }
 .gallery img{
     width: 100%;
@@ -88,7 +90,7 @@ body{
     justify-content: center;
     text-align: center;
     width: 90%;
-    max-width: 20px auto;
+    max-width: 500px; /* Corrected: Example max-width for item-design */
     padding: 20px;
     padding-top: 2em;
     box-sizing: border-box;
@@ -105,14 +107,13 @@ input[type="text"]::placeholder {
     color: #aaa;
     font-style: italic;
     padding: 0 5em;
-  }
+}
 .overlay a{
     font-size: 1.2em;
     color: #5422b1;
 }
 .overlay a:hover{
     color: #aa2929;
-   
 }
 
 #sub{
@@ -125,7 +126,6 @@ input[type="text"]::placeholder {
 
 #sub:hover{
     scale: 1.05;
-    
 }
 @media (max-width: 768px) {
     .gallery {
@@ -138,6 +138,7 @@ input[type="text"]::placeholder {
 
     .item-design {
         width: 90%;
+        max-width: unset; /* Allow it to take up to 90% on mobile without a hard max-width */
     }
 
     #halo, #sub {

@@ -1,4 +1,4 @@
-body{
+/* body{
     padding: 0;
     background: none;
     width: 100%;
@@ -79,10 +79,116 @@ form .checkboxlabel{
     #halo, #sub {
         width: 50vw;
         font-size: 16px;
+    } */
+/* Reset and Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  /* Form */
+  .register-form {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="date"],
+  .register-form input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s ease;
+  }
+  
+  .register-form input:focus {
+    border-color: #74ebd5;
+    outline: none;
+  }
+  
+  /* Checkbox Section */
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  .checkbox a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .checkbox a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button */
+  .register-form button {
+    padding: 12px;
+    font-size: 16px;
+    background: #74ebd5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .register-form button:hover {
+    background: #62d1c2;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .register-form {
+      padding: 20px;
     }
-
+  
+    .register-form h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
     
-}
+
 /* #full{
     color: #fff;
     padding: 0 2rem;
